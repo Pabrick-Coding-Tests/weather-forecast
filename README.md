@@ -1,27 +1,27 @@
-# WeatherForecast
+# Holition Technical Test - Weather Forecast
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+## Description
+Create a frontend to show the next week(s) weather forecast. The design is down to the candidate to show off their frontend skills. Data is achievable via connecting to [Openweathermap](https://openweathermap.org/forecast5/), etc.  
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a frontend task and the main priority should be in design, styling, and then logic. We expect the candidate to create a suitable component structure, fun and engaging styling with subtle animations, and use immutable data structures with appropriate state management.  
 
-## Code scaffolding
+## Deliverables
+The solution should be delivered as a GitHub link and include a readme file on how to build and run the project.  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Please do not submit your solution as one commit, but multiple commits to show your working, and don’t forget to comment your code! 
 
-## Build
+Please test your submission before sending your link. Always check the node dependencies!  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Required Technologies / features
+- The test should utilise Angular 6+ or React 16+ only.
+- Advanced SASS should be used, and if off the shelf components are used we expect these to be customised e.g. Angular Material & ::dg-deep ● CSS3 Animations are expected.
+- Modern JavaScript such as RxJS should be used
+- A state manager should be used such as Ngrx, Mobx, Redux, etc.
+- Responsive design.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Required Technologies / features
+- Using TypeScript.
+- Full TDD and/or BDD testing (via Mocha, Chai, Karma, Jest, etc).
+- Using Three.JS / Tween.JS for 3D animations.
+- Material Design / Bootstrap.
