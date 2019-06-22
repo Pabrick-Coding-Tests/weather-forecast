@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DayWeather } from 'src/app/shared/DayWeather.class';
+
+import { Weather } from 'src/app/shared/Weather.class';
 
 @Component({
     selector: 'week-navigation',
@@ -8,9 +9,10 @@ import { DayWeather } from 'src/app/shared/DayWeather.class';
 })
 export class WeekNavigationComponent implements OnInit {
 
-@Input() forecast: [DayWeather];
+    @Input() forecast: Weather[];
 
-    constructor() { }
+    constructor() {
+    }
 
     ngOnInit() {
     }

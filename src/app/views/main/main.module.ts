@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { MainComponent } from './main.component';
+import { WeatherInfoModule } from 'src/app/components/weather-info/weather-info.module';
 import { WeekNavigationModule } from 'src/app/components/week-navigation/week-navigation.module';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { WeekNavigationModule } from 'src/app/components/week-navigation/week-na
                 component: MainComponent
             }
         ]),
+        WeatherInfoModule,
         WeekNavigationModule
     ],
     exports: [ MainComponent ]

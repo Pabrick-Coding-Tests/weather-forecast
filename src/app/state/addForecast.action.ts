@@ -1,6 +1,6 @@
-import { DayWeather } from '../shared/DayWeather.class';
+import { Weather } from '../shared/Weather.class';
 
 export class AddForecast {
     static readonly type = "[Forecast] Add";
-    constructor(public payload: Array<DayWeather>) {}
+    constructor(public payload: Weather[]) {}
 }

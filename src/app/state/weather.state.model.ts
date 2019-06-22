@@ -1,7 +1,8 @@
 import { City } from '../shared/City.class';
-import { DayWeather } from '../shared/DayWeather.class';
+import { Weather } from '../shared/Weather.class';
 
 export interface WeatherStateModel {
     city: City,
-    forecast: DayWeather[];
+    currentWeather: Weather;
+    forecast: Weather[];
 }

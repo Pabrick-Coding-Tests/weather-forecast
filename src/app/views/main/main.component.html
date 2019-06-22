@@ -1,5 +1,17 @@
 <section class="main" aria-label="weather-main">
+
     <div *ngIf="loading" class="loading"></div>
-    <week-navigation>
-    </week-navigation>
+
+    <div *ngIf="!loading">
+        <weather-info
+            *ngIf="city$ && forecast$"
+            [city]="city$ | async"
+            [data]="currentWeather$ | async"
+        ></weather-info>
+        <week-navigation
+            *ngIf="forecast$"
+            [forecast]="forecast$ | async"
+        ></week-navigation>
+    </div>
+
 </section>
