@@ -1,3 +1,5 @@
+import { Constants } from './Constants';
+
 /**
  * @class DayWeather
  * @description Contains the most important weather data from a 'day'
@@ -21,5 +23,9 @@ export class DayWeather {
         this.humidity = data.main.humidity;
         this.pressure = data.main.pressure;
         this.temperature = data.main.temp;
+    }
+
+    get isNoon() {
+        return this.hour === Constants.NOON;
     }
 }

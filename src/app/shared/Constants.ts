@@ -9,4 +9,5 @@ export class Constants {
         NAME: "Madrid",
         CODE: "es" 
     };
+    public static NOON = "12:00:00";
 }
