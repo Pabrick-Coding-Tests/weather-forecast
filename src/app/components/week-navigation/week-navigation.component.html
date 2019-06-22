@@ -1,7 +1,3 @@
 <nav class="week-navigation">
-    <div 
-        class="week-navigation_button"
-        *ngFor="let weather of forecast">
-        <day-button [config]="weather"></day-button>
-    </div>
+    <day-button *ngFor="let weather of forecast" [config]="weather"></day-button>
 </nav>

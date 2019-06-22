@@ -1,7 +1,26 @@
-<section>
-    Info
-    <div>
-        {{ city.name }}
-        {{ data.description }}
+<section class="weather-info">
+    <div class="row">
+        <div class="col-sm">
+            <span>City: </span>{{ city.name }}
+        </div>
+        <div class="col-sm">
+            <span>Description: </span>{{ data.description }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <span>Date: </span>{{ data.date | date: 'dd / MM / yyyy' }}
+        </div>
+        <div class="col-sm">
+            <span>Humidity: </span>{{ data.humidity }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <span>Pressure: </span>{{ data.pressure }}
+        </div>
+        <div class="col-sm">
+            <span>Temperature: </span>{{ data.temperature }}
+        </div>
     </div>
 </section>

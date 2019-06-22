@@ -4,7 +4,7 @@
 
     <div *ngIf="!loading">
         <weather-info
-            *ngIf="city$ && forecast$"
+            *ngIf="city$ && currentWeather$"
             [city]="city$ | async"
             [data]="currentWeather$ | async"
         ></weather-info>
@@ -12,6 +12,10 @@
             *ngIf="forecast$"
             [forecast]="forecast$ | async"
         ></week-navigation>
+        <sky
+            *ngIf="currentWeather$"
+            [data]="currentWeather$ | async"
+        ></sky>
     </div>
 
 </section>

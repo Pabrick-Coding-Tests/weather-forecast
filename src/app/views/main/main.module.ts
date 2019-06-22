@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MainComponent } from './main.component';
 import { WeatherInfoModule } from 'src/app/components/weather-info/weather-info.module';
 import { WeekNavigationModule } from 'src/app/components/week-navigation/week-navigation.module';
+import { SkyModule } from 'src/app/components/sky/sky.module';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { WeekNavigationModule } from 'src/app/components/week-navigation/week-na
             }
         ]),
         WeatherInfoModule,
-        WeekNavigationModule
+        WeekNavigationModule,
+        SkyModule
     ],
     exports: [ MainComponent ]
 })
