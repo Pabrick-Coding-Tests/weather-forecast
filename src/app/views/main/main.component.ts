@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { WeatherService } from 'src/app/services/weather.service';
@@ -10,7 +10,7 @@ import { DayWeather } from 'src/app/shared/DayWeather.class';
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit, OnDestroy {
+export class MainComponent implements OnInit {
 
     public loading: boolean = true;
 
@@ -28,8 +28,4 @@ export class MainComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
     }
-
-    ngOnDestroy() {
-    }
-
 }

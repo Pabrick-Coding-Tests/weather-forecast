@@ -15,12 +15,13 @@ Please test your submission before sending your link. Always check the node depe
 
 ## Required Technologies / features
 - The test should utilise Angular 6+ or React 16+ only.
-- Advanced SASS should be used, and if off the shelf components are used we expect these to be customised e.g. Angular Material & ::dg-deep ● CSS3 Animations are expected.
+- Advanced SASS should be used, and if off the shelf components are used we expect these to be customised e.g. Angular Material & ::dg-deep
+- CSS3 Animations are expected.
 - Modern JavaScript such as RxJS should be used
 - A state manager should be used such as Ngrx, Mobx, Redux, etc.
 - Responsive design.
 
-## Required Technologies / features
+## Optional
 - Using TypeScript.
 - Full TDD and/or BDD testing (via Mocha, Chai, Karma, Jest, etc).
 - Using Three.JS / Tween.JS for 3D animations.

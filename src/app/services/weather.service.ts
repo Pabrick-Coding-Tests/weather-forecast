@@ -23,5 +23,4 @@ export class WeatherService {
     public getData(cityName:string, countryCode:string): Observable<any> {
         return this.http.get<any>(`${this.urlForescast5}?q=${cityName},${countryCode}&APPID=${Constants.APP_ID}`);
     }
-
 }

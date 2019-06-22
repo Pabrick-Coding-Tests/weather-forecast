@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { MainComponent } from './main.component';
+import { WeekNavigationModule } from 'src/app/components/week-navigation/week-navigation.module';
 
 @NgModule({
     declarations: [
@@ -11,11 +12,12 @@ import { MainComponent } from './main.component';
     imports: [
         CommonModule,
         RouterModule.forChild([
-        {
-            path: '',
-            component: MainComponent
-        }
-    ])
+            {
+                path: '',
+                component: MainComponent
+            }
+        ]),
+        WeekNavigationModule
     ],
     exports: [ MainComponent ]
 })
