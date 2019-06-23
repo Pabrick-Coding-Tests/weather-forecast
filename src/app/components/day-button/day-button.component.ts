@@ -29,6 +29,4 @@ export class DayButtonComponent implements OnInit {
     public onClick() {
         this.store.dispatch(new AddCurrentWeather(this.config));
     }
-
-
 }

@@ -10,7 +10,7 @@
     box-shadow: 0px 0px 50px 50px #ffd60075;
 
     top: 50%;
-    left: -50%;
+    left: -100%;
 
     &--in {
         animation: effect-sun-in .5s ease-in forwards;
@@ -22,11 +22,11 @@
 }
 
 @keyframes effect-sun-in {
-    0%   { top: 50%; left: -50%; }
-    100% { top: 25%; left:  40%; }
+    0%   { top: 50%; left: -100%; }
+    100% { top: 15%; left:  40%; }
 }
 
 @keyframes effect-sun-out {
-    0%   { top: 25%; left:  40%; }
-    100% { top: 50%; left: 150%; }
+    0%   { top: 15%; left:  40%; }
+    100% { top: 50%; left: 200%; }
 }

@@ -29,11 +29,11 @@
         }
     }
     &--left {
-        left: -50%;
+        left: -100%;
         opacity: .9;
     }
     &--right {
-        left: 150%;
+        left: 200%;
         opacity: .8;
     }
 }
@@ -53,19 +53,19 @@
 }
 
 @keyframes effect-cloud-left-in {
-    0%   { left: -50%; }
+    0%   { left: -100%; }
     100% { left:  30%; }
 }
 @keyframes effect-cloud-left-out {
     0%   { left:  30%; }
-    100% { left: -50%; }
+    100% { left: -100%; }
 }
 
 @keyframes effect-cloud-right-in {
-    0%   { left: 150%; }
+    0%   { left: 200%; }
     100% { left:  60%; }
 }
 @keyframes effect-cloud-right-out {
     0%   { left:  60%; }
-    100% { left: 150%; }
+    100% { left: 200%; }
 }

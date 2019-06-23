@@ -12,7 +12,6 @@ import { AddCity } from 'src/app/state/addCity.action';
 import { AddForecast } from 'src/app/state/addForecast.action';
 import { WeatherState } from 'src/app/state/weather.state';
 import { Observable } from 'rxjs';
-import { async } from 'q';
 import { AddCurrentWeather } from 'src/app/state/addCurrentWeather.action';
 
 @Component({
@@ -23,8 +22,9 @@ import { AddCurrentWeather } from 'src/app/state/addCurrentWeather.action';
 export class MainComponent implements OnInit {
 
     public loading: boolean = true;
+    
     @Select(WeatherState.getCity) city$: Observable<City>;
-    @Select(WeatherState.getForecast) forecast$: Observable<Weather[]>;
+    @Select(WeatherState.getForecastNoon) forecast$: Observable<Weather[]>;
     @Select(WeatherState.getCurrentWeather) currentWeather$: Observable<Weather>;
 
     constructor(public router: Router, private store: Store, public weatherService: WeatherService) {

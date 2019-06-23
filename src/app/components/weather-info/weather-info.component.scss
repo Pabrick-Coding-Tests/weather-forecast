@@ -1,15 +1,48 @@
 :host ::ng-deep {
-    background-color: rgba(255, 255, 255, .2);
+    bottom: 180px;
     display: block;
     margin: 50px auto;
     padding: 20px;
-    color: white;
-    max-width: 500px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 100;
 
-    span {
-        font-weight: bold;
-        margin-right: 4px;
+    .weather-info {
+        &_panel-main {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        &_city {
+            color: #FFF;
+            font-size: 60px;
+            line-height: 1;
+        }
+
+        &_date {
+            color: #FFF;
+            font-size: 30px;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        &_description {
+            color: #CCC;
+            font-size: 30px;
+            line-height: 1;
+            margin-top: 10px;
+        }
+
+        &_panel-data {
+            color: #FFF;
+            text-align: center;
+            font-size: 22px;
+
+            span {
+                display: block;
+                font-weight: bold;
+                margin-right: 4px;
+            }
+        }
     }
 }

@@ -20,6 +20,7 @@ export class WeatherState {
     static getCity(state: WeatherStateModel) {
         return state.city;
     }
+    // Current weather will the forecast selected, in order to be showed in the app
     @Selector()
     static getCurrentWeather(state: WeatherStateModel) {
         return state.currentWeather;
@@ -28,6 +29,7 @@ export class WeatherState {
     static getForecast(state: WeatherStateModel) {
         return state.forecast;
     }
+    // This selector allows us to retrieve only the forecast at 12:00pm
     @Selector()
     static getForecastNoon(state: WeatherStateModel) {
         return state.forecast.filter(day => day.isNoon);

@@ -26,3 +26,27 @@ Please test your submission before sending your link. Always check the node depe
 - Full TDD and/or BDD testing (via Mocha, Chai, Karma, Jest, etc).
 - Using Three.JS / Tween.JS for 3D animations.
 - Material Design / Bootstrap.
+
+# Result
+The application has been developed to show differents CSS animations for each type of weather. Due to lack of time only 3 animations out of 7 have been designed: SUN, CLOUDS and a GIF for the RAIN.
+
+The forescast returned for the API brings a lot of information for each day, but for this example I have taken the criteria of showing only the forecast at noon (12:00pm).
+
+If by chance the 5 next days have the same weather and you want to see all the forecast animations, it is possible to use another @Selector in the state, which will retrieve the full forecasts.
+
+The @Selector:
+````js
+/* main.component.ts:27 */
+@Select(WeatherState.getForecastNoon) forecast$: Observable<Weather[]>;
+````
+
+should be changed to:
+````js
+/* main.component.ts:27 */
+@Select(WeatherState.getForecast) forecast$: Observable<Weather[]>;
+````
+
+I hope you like it!
+
+## Thanks!
+## Pablo.

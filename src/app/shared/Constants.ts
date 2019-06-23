@@ -1,3 +1,4 @@
+// Most of the values have been extracted to this file in case they required translation or future changes
 export class Constants {
     public static API_URL = "http://api.openweathermap.org/data/2.5/";
     public static ICON_URL ="http://openweathermap.org/img/w/";
