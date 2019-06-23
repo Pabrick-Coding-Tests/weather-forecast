@@ -1,12 +1,12 @@
 button {
-    background-color: rgba(255, 255, 255, .5);
-    border: 5px solid #FFF;
+    background-color: #CDDC39;
+    border: 5px solid #CDDC39;
     padding: 10px;
     height: 100px;
     width: 100px;
 
     &:hover {
-        border: 5px solid #000;
+        border: 5px solid #827717;
     }
 
     .button_text {

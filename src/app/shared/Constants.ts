@@ -12,4 +12,13 @@ export class Constants {
     };
     public static NOON = 12;
     public static MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+    public static WEATHER = {
+        SUN: "Sun",
+        CLOUDS: "Clouds",
+        MIST: "Mist",
+        SNOW: "Snow",
+        RAIN: "Rain",
+        DRIZZLE: "Drizzle",
+        STORM: "Storm"
+    }
 }

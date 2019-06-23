@@ -1,6 +1,13 @@
 <section class="main" aria-label="weather-main">
 
-    <div *ngIf="loading" class="loading"></div>
+    <div *ngIf="loading" class="loading">
+        <div class="loading-ring">
+            <div class="loading-ring_arc"></div>
+            <div class="loading-ring_arc"></div>
+            <div class="loading-ring_arc"></div>
+            <div class="loading-ring_arc"></div>
+        </div>
+    </div>
 
     <div *ngIf="!loading">
         <weather-info

@@ -1,3 +1,9 @@
 <section class="sky">
-    {{ data.description }}
+    <div class="sky-sun" [ngClass]="skySun">{{ data.id }}</div>
+    <div class="sky-clouds" [ngClass]="skyClouds">{{ data.id }}</div>
+    <div class="sky-mist" [ngClass]="skyMist">{{ data.id }}</div>
+    <div class="sky-snow" [ngClass]="skySnow">{{ data.id }}</div>
+    <div class="sky-rain" [ngClass]="skyRain">{{ data.id }}</div>
+    <div class="sky-drizzle" [ngClass]="skyDrizzle">{{ data.id }}</div>
+    <div class="sky-strom" [ngClass]="skyStorm">{{ data.id }}</div>
 </section>
