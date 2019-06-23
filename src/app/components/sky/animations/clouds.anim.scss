@@ -1,0 +1,71 @@
+.sky-effect-cloud {
+    &--left,
+    &--right {
+        position: relative;
+        top: 20%;
+        div {
+            background-color: #EEE;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            &:nth-child(1) {
+                height: 200px;
+                width: 200px;
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(2) {
+                height: 100px;
+                width: 250px;
+                top: 128px;
+                left: -100px;
+            }
+            &:nth-child(3) {
+                height: 121px;
+                width: 195px;
+                top: 90px;
+                left: 62px;
+            }
+        }
+    }
+    &--left {
+        left: -50%;
+        opacity: .9;
+    }
+    &--right {
+        left: 150%;
+        opacity: .8;
+    }
+}
+
+.sky-effect-cloud--left--in {
+    animation: effect-cloud-left-in .5s ease-in forwards;
+}
+.sky-effect-cloud--right--in {
+    animation: effect-cloud-right-in .5s ease-in forwards;
+}
+
+.sky-effect-cloud--left--out {
+    animation: effect-cloud-left-out .5s ease-out forwards;
+}
+.sky-effect-cloud--right--out {
+    animation: effect-cloud-right-out .5s ease-out forwards;
+}
+
+@keyframes effect-cloud-left-in {
+    0%   { left: -50%; }
+    100% { left:  30%; }
+}
+@keyframes effect-cloud-left-out {
+    0%   { left:  30%; }
+    100% { left: -50%; }
+}
+
+@keyframes effect-cloud-right-in {
+    0%   { left: 150%; }
+    100% { left:  60%; }
+}
+@keyframes effect-cloud-right-out {
+    0%   { left:  60%; }
+    100% { left: 150%; }
+}

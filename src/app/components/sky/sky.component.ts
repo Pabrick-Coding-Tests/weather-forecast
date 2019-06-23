@@ -20,6 +20,11 @@ export class SkyComponent implements OnInit, OnChanges {
     public skyDrizzle:string;
     public skyStorm:string;
 
+    public effectSun:string;
+    public effectCloudLeft:string;
+    public effectCloudRight:string;
+    public effectRain:string;
+
     private skyMap = new Map();
 
     constructor() {
@@ -44,17 +49,35 @@ export class SkyComponent implements OnInit, OnChanges {
 
     private getSkyWeatherFromCode(id) {
         let weather = id === 800 ? Constants.WEATHER.SUN : this.skyMap.get(Math.floor(id/100))
-        return `sky${weather}`;
+        return weather;
     }
 
-    private changeSky(oldWeather, newWeather) {
+    private changeSky(oldWeather:string, newWeather:string) {
         this.hideAllSkies();
 
-        this[oldWeather] = "sky-fade-out";
-        this[newWeather] = "sky-fade-in";
+        this[`sky${oldWeather}`] = "sky-fade-out";
+        this[`sky${newWeather}`] = "sky-fade-in";
 
-        console.log("Out", oldWeather + " / " + this[oldWeather]);
-        console.log("In", newWeather + " / " + this[newWeather]);
+        this.setEffect(oldWeather, "out");
+        this.setEffect(newWeather, "in");
+
+        // console.log("Out", oldWeather + " / " + this[oldWeather]);
+        // console.log("In", newWeather + " / " + this[newWeather]);
+    }
+
+    private setEffect(weather, direction) {
+        switch(weather) {
+            case Constants.WEATHER.SUN:
+                this.effectSun = `sky-effect-sun--yellow--${direction}`;
+                break;
+            case Constants.WEATHER.CLOUDS:
+                this.effectCloudLeft = `sky-effect-cloud--left--${direction}`;
+                this.effectCloudRight = `sky-effect-cloud--right--${direction}`;
+                break;
+            case Constants.WEATHER.RAIN:
+                    this.effectRain = `sky-effect-rain--${direction}`;
+                    break;
+        }
     }
 
     private hideAllSkies() {

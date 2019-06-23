@@ -1,0 +1,32 @@
+.sky-effect-sun--yellow {
+    background-color: #ffd600;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+    -webkit-box-shadow: 0px 0px 50px 50px #ffd60075;
+    -moz-box-shadow: 0px 0px 50px 50px #ffd60075;
+    box-shadow: 0px 0px 50px 50px #ffd60075;
+
+    top: 50%;
+    left: -50%;
+
+    &--in {
+        animation: effect-sun-in .5s ease-in forwards;
+    }
+
+    &--out {
+        animation: effect-sun-out .5s ease-out forwards;
+    }
+}
+
+@keyframes effect-sun-in {
+    0%   { top: 50%; left: -50%; }
+    100% { top: 25%; left:  40%; }
+}
+
+@keyframes effect-sun-out {
+    0%   { top: 25%; left:  40%; }
+    100% { top: 50%; left: 150%; }
+}

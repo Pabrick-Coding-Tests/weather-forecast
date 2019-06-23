@@ -24,7 +24,7 @@ export class MainComponent implements OnInit {
 
     public loading: boolean = true;
     @Select(WeatherState.getCity) city$: Observable<City>;
-    @Select(WeatherState.getForecastNoon) forecast$: Observable<Weather[]>;
+    @Select(WeatherState.getForecast) forecast$: Observable<Weather[]>;
     @Select(WeatherState.getCurrentWeather) currentWeather$: Observable<Weather>;
 
     constructor(public router: Router, private store: Store, public weatherService: WeatherService) {

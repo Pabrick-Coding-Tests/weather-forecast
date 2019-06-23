@@ -1,9 +1,25 @@
 <section class="sky">
-    <div class="sky-sun" [ngClass]="skySun">{{ data.id }}</div>
-    <div class="sky-clouds" [ngClass]="skyClouds">{{ data.id }}</div>
-    <div class="sky-mist" [ngClass]="skyMist">{{ data.id }}</div>
-    <div class="sky-snow" [ngClass]="skySnow">{{ data.id }}</div>
-    <div class="sky-rain" [ngClass]="skyRain">{{ data.id }}</div>
-    <div class="sky-drizzle" [ngClass]="skyDrizzle">{{ data.id }}</div>
-    <div class="sky-strom" [ngClass]="skyStorm">{{ data.id }}</div>
+
+    <div class="sky-effect">
+        <div class="sky-effect-sun--yellow" [ngClass]="effectSun"></div>
+
+        <div class="sky-effect-cloud--left" [ngClass]="effectCloudLeft">
+            <div></div><div></div><div></div>
+        </div>
+        <div class="sky-effect-cloud--right" [ngClass]="effectCloudRight">
+            <div></div><div></div><div></div>
+        </div>
+
+        <div class="sky-effect-rain" [ngClass]="effectRain">
+            <i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i>
+        </div>
+    </div>
+
+    <div class="sky-bg-sun" [ngClass]="skySun">{{ data.id }}</div>
+    <div class="sky-bg-clouds" [ngClass]="skyClouds">{{ data.id }}</div>
+    <div class="sky-bg-mist" [ngClass]="skyMist">{{ data.id }}</div>
+    <div class="sky-bg-snow" [ngClass]="skySnow">{{ data.id }}</div>
+    <div class="sky-bg-rain" [ngClass]="skyRain">{{ data.id }}</div>
+    <div class="sky-bg-drizzle" [ngClass]="skyDrizzle">{{ data.id }}</div>
+    <div class="sky-bg-storm" [ngClass]="skyStorm">{{ data.id }}</div>
 </section>

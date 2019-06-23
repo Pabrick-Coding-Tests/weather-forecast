@@ -1,4 +1,8 @@
 @import "./../../styles/mixins.scss";
+@import "./animations/sky.anim.scss";
+@import "./animations/sun.anim.scss";
+@import "./animations/clouds.anim.scss";
+@import "./animations/rain.anim.css";
 
 :host ::ng-deep {
     background-color: #FFFFFF;
@@ -16,67 +20,56 @@
     }
 
     .sky {
-        div {
-            @include sky-bg;
-        }
-        &-sun {
-            background-color: #7db9e8;
-            @include filter-gradient-vertical(#7db9e8, #1e5799);
-        }
+        &-bg {
+            &-sun {
+                @include sky-bg;
+                background-color: #7db9e8;
+                @include filter-gradient-vertical(#7db9e8, #1e5799);
+            }
+        
+            &-clouds {
+                @include sky-bg;
+                background-color: #7db9e8;
+                @include filter-gradient-vertical(#7db9e8, #1e5799);
+            }
     
-        &-clouds {
-            background-color: #7db9e8;
-            @include filter-gradient-vertical(#7db9e8, #1e5799);
-        }
-
-        &-mist {
-            background-color: #4d8e89;
-            @include filter-gradient-vertical(#4d8e89, #0f444f);
-        }
-
-        &-snow {
-            background-color: #feffff;
-            @include filter-gradient-vertical(#feffff, #a0d8ef);
-        }
-
-        &-rain {
-            background-color: #1e5799;
-            @include filter-gradient-vertical(#1e5799, #7db9e8);
-        }
-
-        &-drizzle {
-            background-color: #cccccc;
-            @include filter-gradient-vertical(#cccccc, #86b6c9);
-        }
-
-        &-storm {
-            background-color: #12191c;
-            @include filter-gradient-vertical(#12191c, #8495b2);
-        }
-
-        // DYNAMIC CLASSES
-        &-fade-in {
-            visibility: visible;
-            animation: fade-in .5s ease-in forwards;
-        }
+            &-mist {
+                @include sky-bg;
+                background-color: #4d8e89;
+                @include filter-gradient-vertical(#4d8e89, #0f444f);
+            }
     
-        &-fade-out {
-            visibility: visible;
-            animation: fade-out .9s ease-out forwards;
-        }
+            &-snow {
+                @include sky-bg;
+                background-color: #feffff;
+                @include filter-gradient-vertical(#feffff, #a0d8ef);
+            }
     
-        &-hidden {
-            visibility: hidden;
+            &-rain {
+                @include sky-bg;
+                background-color: #1e5799;
+                @include filter-gradient-vertical(#1e5799, #7db9e8);
+            }
+    
+            &-drizzle {
+                @include sky-bg;
+                background-color: #cccccc;
+                @include filter-gradient-vertical(#cccccc, #86b6c9);
+            }
+    
+            &-storm {
+                @include sky-bg;
+                background-color: #12191c;
+                @include filter-gradient-vertical(#12191c, #8495b2);
+            }
         }
-    }    
-}
 
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fade-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
+        &-effect {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: 2000;
+        }
+    }
 }
